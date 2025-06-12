@@ -3,10 +3,11 @@ require_once 'controllers/pesan.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $data = [
-        'nama' => $_POST['nama'],
-        'email' => $_POST['email'],
-        'subjek' => $_POST['subjek'],
-        'pesan' => $_POST['pesan']
+        'tipe_form' => $_POST['tipe_form'],
+        'nama_kontak' => $_POST['nama_kontak'],
+        'email_kontak' => $_POST['email_kontak'],
+        'subjek_kontak' => $_POST['subjek_kontak'],
+        'pesan_kontak' => $_POST['pesan_kontak']
     ];
 
     insert_pesan($data);
@@ -75,6 +76,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <form action="" method="post" role="form" class="form p-3 p-md-4" style="width: 100%; margin-top: 30px; background: #fff; box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);">
       <div class="row">
         <div class="col-xl-6 form-group" style="padding-bottom: 20px;">
+          <input type="hidden" name="tipe_form" value="kontak">
           <input style="border-radius: 0; height: 48px; box-shadow: none; font-size: 14px;" type="text" name="nama" class="form-control" id="name" placeholder="Nama Anda" required>
         </div>
         <div class="col-xl-6 form-group" style="padding-bottom: 20px;">

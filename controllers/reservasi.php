@@ -39,6 +39,9 @@ function get_flashdata_reservasi($key) {
 }
 
 function insert_reservasi($data) {
+    if ($_POST['tipe_form'] !== 'reservasi') {
+        return;
+    }
     $nama = $_POST['nama'];
     $email = $_POST['email'];
     $telepon = $_POST['telepon'];

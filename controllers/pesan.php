@@ -21,6 +21,9 @@ function get_flashdata_pesan($key) {
 }
 
 function insert_pesan($data) {
+    if ($_POST['tipe_form'] !== 'kontak') {
+        return;
+    }
     $nama = $_POST['nama'];
     $email = $_POST['email'];
     $subjek = $_POST['subjek'];

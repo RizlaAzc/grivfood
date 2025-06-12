@@ -3,6 +3,7 @@ require_once 'controllers/reservasi.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $data = [
+        'tipe_form' => $_POST['tipe_form'],
         'nama' => $_POST['nama'],
         'email' => $_POST['email'],
         'telepon' => $_POST['telepon'],
@@ -32,6 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <form action="" method="post" role="form" class="form" style="padding: 40px;" data-aos="fade-up" data-aos-delay="100">
           <div class="row gy-4">
             <div class="col-lg-4 col-md-6">
+              <input type="hidden" name="tipe_form" value="reservasi">
               <input style="padding: 12px 15px; border-radius: 0; box-shadow: none; font-size: 14px; border-radius: 0;" type="text" name="nama" class="form-control" id="name" placeholder="Nama Anda" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
               <div class="validate"></div>
             </div>
