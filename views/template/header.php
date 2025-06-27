@@ -42,7 +42,7 @@
           <li><a href="#menu">Menu</a></li>
           <li><a href="#acara">Acara</a></li>
           <li><a href="#galeri">Galeri</a></li>
-          <li><a href="#pesan">Pesan</a></li>
+          <li><a href="#reservasi">Reservasi</a></li>
           <li><a href="#kontak">Kontak</a></li>
         </ul>
       </nav>

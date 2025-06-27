@@ -26,7 +26,7 @@
             <b style="font-size: 8px;">Catatan : Silakan membawa minuman Anda sendiri, dikarenakan kami tidak menyediakan minuman ;)</b>
           </p>
           <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-            <a href="#pesan" class="btn-book-a-table" style="">Booking Tempat</a>
+            <a href="#reservasi" class="btn-book-a-table" style="">Booking Tempat</a>
           </div>
         </div>
         <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">

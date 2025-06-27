@@ -17,11 +17,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
-<section id="pesan" class="book-a-table">
+<section id="reservasi" class="book-a-table">
   <div class="container" data-aos="fade-up">
 
     <div class="section-header">
-      <h2>Pesan</h2>
+      <h2>Reservasi</h2>
       <p><span>Reservasi</span> Dengan <span>GRIV</span></p>
     </div>
 
