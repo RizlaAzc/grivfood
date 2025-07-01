@@ -1,4 +1,5 @@
-  <?php
+<?php
+// Menghubungkan ke file kontroller yang diperlukan
   require_once 'controllers/pengunjung.php';
   require_once 'controllers/pesan.php';
   require_once 'controllers/reservasi.php';
@@ -7,8 +8,10 @@
   insert_pengunjung($ip);
   ?>
 
+<!-- Halaman Beranda -->
   <section id="beranda" class="hero d-flex align-items-center section-bg">
     <div class="container">
+      <!-- Notifikasi Reservasi -->
       <?php
       $reservasi = get_flashdata_reservasi('reservasi');
       $pesan = get_flashdata_pesan('pesan');
@@ -18,6 +21,8 @@
           echo $pesan;
       }
       ?>
+
+      <!-- Tagline dan Logo -->
       <div class="row justify-content-between gy-5">
         <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
           <h2 data-aos="fade-up">Nikmati Makanan<br>Sehat dan Lezat Anda</h2>

@@ -1,5 +1,6 @@
     <footer id="footer" class="footer">
 
+    <!-- Alamat -->
       <div class="container">
         <div class="row gy-3">
           <div class="col-lg-3 col-md-6 d-flex">
@@ -12,6 +13,7 @@
             </div>
           </div>
 
+          <!-- Reservasi -->
           <div class="col-lg-3 col-md-6 footer-links d-flex">
             <i class="bi bi-telephone icon"></i>
             <div>
@@ -23,6 +25,7 @@
             </div>
           </div>
 
+          <!-- Jam Buka -->
           <div class="col-lg-3 col-md-6 footer-links d-flex">
             <i class="bi bi-clock icon"></i>
             <div>
@@ -34,6 +37,7 @@
             </div>
           </div>
 
+          <!-- Sosial Media -->
           <div class="col-lg-3 col-md-6 footer-links">
             <h4>Ikuti Kami</h4>
             <div class="social-links d-flex">
@@ -46,6 +50,7 @@
         </div>
       </div>
 
+      <!-- Hak Cipta -->
       <div class="container">
         <div class="copyright">
           &copy; Copyright <strong><span>GRIVFood</span></strong>. All Rights Reserved
@@ -66,6 +71,7 @@
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
 
+    <!-- JavaScript -->
     <script src="assets/js/main.js"></script>
   </body>
 </html>

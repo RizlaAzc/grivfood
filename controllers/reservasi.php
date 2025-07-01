@@ -1,6 +1,7 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
 
+// Fungsi untuk menampilkan jumlah reservasi pada halaman tentang
 function get_data_reservasi() {
     $koneksi = mysqli_connect  ("localhost", "root", "", "grivfood");
     if (!$koneksi) {
@@ -19,6 +20,7 @@ function get_data_reservasi() {
     }
 }
 
+// Fungsi untuk membuat notifikasi reservasi
 function set_flashdata_reservasi($key, $reservasi) {
     if (session_status() == PHP_SESSION_NONE) {
         session_start();
@@ -26,6 +28,7 @@ function set_flashdata_reservasi($key, $reservasi) {
     $_SESSION['flashdata'][$key] = $reservasi;
 }
 
+// Fungsi untuk mengambil notifikasi reservasi
 function get_flashdata_reservasi($key) {
     if (session_status() == PHP_SESSION_NONE) {
         session_start();
@@ -38,6 +41,7 @@ function get_flashdata_reservasi($key) {
     return null;
 }
 
+// Fungsi untuk menyimpan data reservasi ke dalam database
 function insert_reservasi($data) {
     if ($_POST['tipe_form'] !== 'reservasi') {
         return;

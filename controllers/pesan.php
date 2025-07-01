@@ -1,6 +1,7 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
 
+// Fungsi untuk membuat notifikasi pesan
 function set_flashdata_pesan($key, $pesan) {
     if (session_status() == PHP_SESSION_NONE) {
         session_start();
@@ -8,6 +9,7 @@ function set_flashdata_pesan($key, $pesan) {
     $_SESSION['flashdata'][$key] = $pesan;
 }
 
+// Fungsi untuk mengambil notifikasi pesan
 function get_flashdata_pesan($key) {
     if (session_status() == PHP_SESSION_NONE) {
         session_start();
@@ -20,6 +22,7 @@ function get_flashdata_pesan($key) {
     return null;
 }
 
+// Fungsi untuk menyimpan data pesan ke dalam database
 function insert_pesan($data) {
     if ($_POST['tipe_form'] !== 'kontak') {
         return;

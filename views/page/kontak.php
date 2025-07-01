@@ -1,4 +1,5 @@
 <?php 
+// Menghubungkan ke file kontroller yang diperlukan
 require_once 'controllers/pesan.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -14,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
-
+<!-- Halaman Kontak -->
 <section id="kontak" class="contact">
   <div class="container" data-aos="fade-up">
 
@@ -23,12 +24,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       <p>Butuh Bantuan ? <span>Hubungi Kami</span></p>
     </div>
 
+    <!-- Google Maps -->
     <div class="mb-3">
       <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed/v1/place?q=universitas+bina+sarana+informatika+cilebut&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8" frameborder="0" allowfullscreen></iframe>
     </div>
 
     <div class="row gy-4">
 
+    <!-- Alamat -->
       <div class="col-md-6">
         <div class="info-item  d-flex align-items-center">
           <i class="icon bi bi-map flex-shrink-0"></i>
@@ -39,6 +42,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
       </div>
 
+      <!-- Email -->
       <div class="col-md-6">
         <div class="info-item d-flex align-items-center">
           <i class="icon bi bi-envelope flex-shrink-0"></i>
@@ -49,6 +53,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
       </div>
 
+      <!-- Kontak -->
       <div class="col-md-6">
         <div class="info-item  d-flex align-items-center">
           <i class="icon bi bi-telephone flex-shrink-0"></i>
@@ -59,6 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
       </div>
 
+      <!-- Jam Operasional -->
       <div class="col-md-6">
         <div class="info-item  d-flex align-items-center">
           <i class="icon bi bi-share flex-shrink-0"></i>
@@ -73,6 +79,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     </div>
 
+    <!-- Form Pesan -->
     <form action="" method="post" role="form" class="form p-3 p-md-4" style="width: 100%; margin-top: 30px; background: #fff; box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);">
       <div class="row">
         <div class="col-xl-6 form-group" style="padding-bottom: 20px;">

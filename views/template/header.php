@@ -5,10 +5,12 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
+  <!-- Judul Tab Browser -->
   <title>GRIV Food</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
+  <!-- Icon Tab Browser -->
   <link href="assets/img/GRIVlogo.png" rel="icon">
   <link href="assets/img/GRIVlogo.png" rel="apple-touch-icon">
 
@@ -22,6 +24,7 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <!-- CSS -->
   <link href="assets/css/main.css" rel="stylesheet">
 
 </head>
@@ -31,10 +34,12 @@
   <header id="header" class="header fixed-top d-flex align-items-center" style="box-shadow: 0 -6px 10px 5px rgba(0,0,0,0.5);">
     <div class="container d-flex align-items-center justify-content-between">
 
+    <!-- Logo Navbar -->
       <a href="" class="logo d-flex align-items-center me-auto me-lg-0">
         <h1>GRIV <span>Food.</span></h1>
       </a>
 
+      <!-- Navbar -->
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="#beranda">Beranda</a></li>
@@ -47,6 +52,7 @@
         </ul>
       </nav>
 
+      <!-- Sosial Media -->
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <div class="social">

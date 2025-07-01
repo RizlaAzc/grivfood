@@ -1,6 +1,7 @@
 <?php
 date_default_timezone_set('Asia/Jakarta');
 
+// fungsi untuk mendapatkan IP pengunjung
 function insert_pengunjung($ip) {
     $date = date('Y-m-d');
     $date_created = date('Y-m-d H:i:s');
@@ -21,6 +22,7 @@ function insert_pengunjung($ip) {
     }
 }
 
+// fungsi untuk menampilkan jumlah pengunjung pada halaman tentang
 function get_data_pengunjung() {
     $koneksi = mysqli_connect("localhost", "root", "", "grivfood");
     if (!$koneksi) {

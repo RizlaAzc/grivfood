@@ -1,4 +1,5 @@
 <?php
+// Menghubungkan ke file kontroller yang diperlukan
 require_once 'controllers/reservasi.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -17,6 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 }
 ?>
 
+<!-- Halaman Reservasi -->
 <section id="reservasi" class="book-a-table">
   <div class="container" data-aos="fade-up">
 
@@ -29,6 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
       <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservation.jpg);" data-aos="zoom-out" data-aos-delay="200"></div>
 
+      <!-- Form Reservsasi -->
       <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
         <form action="" method="post" role="form" class="form" style="padding: 40px;" data-aos="fade-up" data-aos-delay="100">
           <div class="row gy-4">
@@ -77,6 +80,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <div class="container mt-4" data-aos="fade-up">
 
+  <!-- Pesan Online -->
     <div class="section-header">
       <p>Atau <span>Ingin Pesan Secara Online ?</span></p>
       <p style="font-size: 36px;">Dapat Anda pesan melalui</p>
